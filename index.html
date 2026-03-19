@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人网站</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Zeratul</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">首页</a></li>
+        <li><a href="#about">关于我</a></li>
+        <li><a href="#skills">技能</a></li>
+        <li><a href="#projects">项目</a></li>
+        <li><a href="#contact">联系</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="切换菜单">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-greeting">你好，我是</p>
+      <h1 class="hero-name">Zeratul</h1>
+      <p class="hero-title">全栈开发者 &amp; 设计爱好者</p>
+      <p class="hero-desc">热爱编程，专注于构建优雅高效的 Web 应用</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">查看项目</a>
+        <a href="#contact" class="btn btn-outline">联系我</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar">Z</div>
+      </div>
+      <div class="floating-badge badge-1">HTML / CSS</div>
+      <div class="floating-badge badge-2">JavaScript</div>
+      <div class="floating-badge badge-3">React</div>
+      <div class="floating-badge badge-4">Python</div>
+    </div>
+    <div class="scroll-indicator">
+      <span>向下滚动</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title">关于我</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            我是一名充满热情的全栈开发者，拥有丰富的 Web 开发经验。
+            我热衷于将创意转化为现实，构建既美观又实用的数字产品。
+          </p>
+          <p>
+            在技术的世界里，我不断探索和学习，追求代码的优雅与高效。
+            闲暇时，我喜欢研究新技术、参与开源社区，以及分享编程心得。
+          </p>
+          <div class="about-info">
+            <div class="info-item">
+              <span class="info-label">📍 位置</span>
+              <span class="info-value">中国</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">💼 状态</span>
+              <span class="info-value">开放合作机会</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 学历</span>
+              <span class="info-value">计算机科学学士</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">3+</span>
+            <span class="stat-label">年开发经验</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">20+</span>
+            <span class="stat-label">完成项目</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">10+</span>
+            <span class="stat-label">满意客户</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">∞</span>
+            <span class="stat-label">学习热情</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <h2 class="section-title">技能栈</h2>
+      <div class="skills-categories">
+        <div class="skill-category">
+          <h3 class="category-title">前端开发</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">HTML / CSS</span>
+                <span class="skill-pct">95%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 95%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">JavaScript</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 88%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">React</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 82%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Vue.js</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 75%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title">后端开发</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Python</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 85%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Node.js</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 78%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">MySQL / MongoDB</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 80%"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-header">
+                <span class="skill-name">Docker</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" style="--pct: 65%"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3 class="category-title">工具 &amp; 其他</h3>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">VS Code</span>
+            <span class="tag">Figma</span>
+            <span class="tag">Linux</span>
+            <span class="tag">REST API</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">TypeScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title">项目展示</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🛒</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⌨ 代码</a>
+              <a href="#" class="project-link" title="Demo">🔗 演示</a>
+            </div>
+          </div>
+          <h3 class="project-title">电商购物平台</h3>
+          <p class="project-desc">
+            基于 React + Node.js 构建的全功能电商平台，支持商品管理、购物车、订单处理和在线支付。
+          </p>
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Stripe</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📝</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⌨ 代码</a>
+              <a href="#" class="project-link" title="Demo">🔗 演示</a>
+            </div>
+          </div>
+          <h3 class="project-title">任务管理系统</h3>
+          <p class="project-desc">
+            功能完善的任务管理应用，支持看板视图、团队协作、截止日期提醒和进度追踪。
+          </p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">WebSocket</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">🤖</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⌨ 代码</a>
+              <a href="#" class="project-link" title="Demo">🔗 演示</a>
+            </div>
+          </div>
+          <h3 class="project-title">AI 聊天助手</h3>
+          <p class="project-desc">
+            集成大语言模型的智能聊天应用，支持多轮对话、上下文记忆和自定义角色设定。
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">OpenAI</span>
+            <span class="tag">React</span>
+          </div>
+        </article>
+        <article class="project-card">
+          <div class="project-header">
+            <span class="project-icon">📊</span>
+            <div class="project-links">
+              <a href="#" class="project-link" title="GitHub">⌨ 代码</a>
+              <a href="#" class="project-link" title="Demo">🔗 演示</a>
+            </div>
+          </div>
+          <h3 class="project-title">数据可视化仪表板</h3>
+          <p class="project-desc">
+            实时数据监控与可视化平台，提供丰富的图表组件、自定义报表和数据导出功能。
+          </p>
+          <div class="project-tags">
+            <span class="tag">D3.js</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Redis</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <h2 class="section-title">联系我</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">
+            无论是项目合作、技术交流还是工作机会，欢迎随时与我联系！
+          </p>
+          <div class="contact-items">
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <p class="contact-label">邮箱</p>
+                <a href="mailto:zeratul@example.com" class="contact-value">zeratul@example.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🐙</span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/whz34688-sketch" target="_blank" rel="noopener noreferrer" class="contact-value">github.com/whz34688-sketch</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💼</span>
+              <div>
+                <p class="contact-label">领英</p>
+                <a href="#" class="contact-value">LinkedIn Profile</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form">
+          <div class="form-group">
+            <label for="name">姓名</label>
+            <input type="text" id="name" name="name" placeholder="您的姓名" required />
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱</label>
+            <input type="email" id="email" name="email" placeholder="您的邮箱" required />
+          </div>
+          <div class="form-group">
+            <label for="message">留言</label>
+            <textarea id="message" name="message" rows="5" placeholder="请输入您的留言内容..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">发送消息 ✉️</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        © 2026 Zeratul · 用 ❤️ 和 ☕ 构建
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
