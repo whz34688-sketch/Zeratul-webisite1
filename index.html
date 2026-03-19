@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>前哨Zeratul | AI探索者与AI赋能创作者</title>
+    <meta
+      name="description"
+      content="前哨Zeratul 的个人网站，展示大学生视角下的 AI 探索、内容表达、效率实践与合作入口。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="sky-backdrop" aria-hidden="true">
+      <div class="nebula-layer nebula-layer-one"></div>
+      <div class="nebula-layer nebula-layer-two"></div>
+      <div class="starfield" id="starfield"></div>
+    </div>
+    <div class="star-glow-overlay" id="star-glow-overlay" aria-hidden="true"></div>
+    <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="brand-block">
+          <p class="eyebrow" id="site-eyebrow">AI Student Creator</p>
+          <div class="title-row">
+            <img class="brand-owl" src="./brand-owl.svg" alt="" aria-hidden="true" />
+            <h1 class="site-title" id="site-title">你的名字</h1>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="切换导航">
+          菜单
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="主导航"></nav>
+      </header>
+
+      <main>
+        <div class="tabs-shell">
+          <div class="tabs-track" id="tabs-track"></div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./content.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
