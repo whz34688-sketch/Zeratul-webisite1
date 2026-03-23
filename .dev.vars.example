@@ -1,0 +1,25 @@
+# Workers AI configuration
+# If you later add a Pages AI binding named AI, runtime code will优先使用绑定。
+# 如果没有 AI 绑定，则会退回到下面这组 Workers AI REST 配置。
+CLOUDFLARE_ACCOUNT_ID=
+CLOUDFLARE_API_TOKEN=
+CF_AI_MODEL=@cf/meta/llama-3.1-8b-instruct-fast
+
+# OpenAI-compatible fallback
+# 如果你更想直接走 OpenAI / 兼容 OpenAI 的接口，可以只填下面这组。
+# 例如向量引擎文档给出的 DeepSeek 聊天接口：
+# OPENAI_BASE_URL=https://api.vectorengine.ai/v1
+# OPENAI_MODEL=deepseek-v3-1-250821
+OPENAI_API_KEY=
+OPENAI_BASE_URL=https://api.openai.com/v1
+OPENAI_MODEL=gpt-4.1-mini
+OPENAI_THINKING_TYPE=
+
+# Cloudflare Turnstile
+# 本地开发不填也能启动：localhost 下会自动走开发跳过逻辑。
+TURNSTILE_SITE_KEY=
+TURNSTILE_SECRET_KEY=
+
+# Basic rate limit (10 minutes / 18 requests by default)
+CHAT_RATE_LIMIT_WINDOW_MS=600000
+CHAT_RATE_LIMIT_MAX_REQUESTS=18

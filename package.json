@@ -1,0 +1,15 @@
+{
+  "name": "ai-student-site",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "sync:kb": "node ./scripts/sync-knowledge.mjs",
+    "dev": "npm run sync:kb && wrangler pages dev .",
+    "dev:ai-binding": "npm run sync:kb && wrangler pages dev . --ai AI",
+    "deploy": "npm run sync:kb && wrangler pages deploy ."
+  },
+  "devDependencies": {
+    "wrangler": "^4.76.0"
+  }
+}

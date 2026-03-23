@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <defs>
+    <linearGradient id="steelMain" x1="24" y1="14" x2="100" y2="116" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAFCFF"/>
+      <stop offset="0.22" stop-color="#C9D3E6"/>
+      <stop offset="0.52" stop-color="#66728B"/>
+      <stop offset="0.82" stop-color="#1C2334"/>
+      <stop offset="1" stop-color="#090E19"/>
+    </linearGradient>
+    <linearGradient id="steelEdge" x1="18" y1="18" x2="110" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF2FF"/>
+      <stop offset="0.38" stop-color="#A8C0FF"/>
+      <stop offset="0.72" stop-color="#6D7CF2"/>
+      <stop offset="1" stop-color="#6A36FF"/>
+    </linearGradient>
+    <linearGradient id="steelDark" x1="28" y1="36" x2="100" y2="98" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171E2C"/>
+      <stop offset="1" stop-color="#050913"/>
+    </linearGradient>
+    <radialGradient id="eyeCore" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 64) rotate(90) scale(54)">
+      <stop offset="0.06" stop-color="#FFFFFF"/>
+      <stop offset="0.18" stop-color="#9BFBFF"/>
+      <stop offset="0.42" stop-color="#33D1FF"/>
+      <stop offset="0.64" stop-color="#544CFF"/>
+      <stop offset="0.88" stop-color="#101A2B"/>
+      <stop offset="1" stop-color="#04070F"/>
+    </radialGradient>
+    <radialGradient id="faceGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 56) rotate(90) scale(48)">
+      <stop stop-color="#A4F5FF" stop-opacity="0.42"/>
+      <stop offset="0.46" stop-color="#7050FF" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#7050FF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="furDisc" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(64 64) rotate(90) scale(38 44)">
+      <stop offset="0.18" stop-color="#B7BCC7"/>
+      <stop offset="0.58" stop-color="#666B78"/>
+      <stop offset="1" stop-color="#111722" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="owlAura" x="12" y="10" width="104" height="108" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="5.5"/>
+    </filter>
+    <filter id="eyeAura" x="20" y="28" width="88" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4.2"/>
+    </filter>
+  </defs>
+
+  <g opacity="0.72" filter="url(#owlAura)">
+    <ellipse cx="64" cy="58" rx="34" ry="30" fill="url(#faceGlow)"/>
+  </g>
+
+  <path d="M18 30L42 12L58 30L44 36L24 36L18 30Z" fill="url(#steelMain)" stroke="url(#steelEdge)" stroke-width="1.6"/>
+  <path d="M110 30L86 12L70 30L84 36L104 36L110 30Z" fill="url(#steelMain)" stroke="url(#steelEdge)" stroke-width="1.6"/>
+  <path d="M28 38L48 14L52 20L36 40L28 38Z" fill="url(#steelMain)" stroke="#D7E7FF" stroke-opacity="0.34" stroke-width="0.9"/>
+  <path d="M100 38L80 14L76 20L92 40L100 38Z" fill="url(#steelMain)" stroke="#D7E7FF" stroke-opacity="0.34" stroke-width="0.9"/>
+
+  <path d="M31 44L17 30L28 54L38 50L31 44Z" fill="url(#steelDark)" stroke="#7B8AFF" stroke-opacity="0.45" stroke-width="1"/>
+  <path d="M97 44L111 30L100 54L90 50L97 44Z" fill="url(#steelDark)" stroke="#7B8AFF" stroke-opacity="0.45" stroke-width="1"/>
+  <path d="M28 52L20 64L34 60L39 53L28 52Z" fill="url(#steelDark)" stroke="#56D9FF" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M100 52L108 64L94 60L89 53L100 52Z" fill="url(#steelDark)" stroke="#56D9FF" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M24 62L18 76L30 72L34 62L24 62Z" fill="url(#steelDark)" stroke="#6C7CFF" stroke-opacity="0.3" stroke-width="0.9"/>
+  <path d="M104 62L110 76L98 72L94 62L104 62Z" fill="url(#steelDark)" stroke="#6C7CFF" stroke-opacity="0.3" stroke-width="0.9"/>
+
+  <path
+    d="M64 18C79 18 92 24 100 38C107 51 104 72 94 88C86 101 76 108 64 114C52 108 42 101 34 88C24 72 21 51 28 38C36 24 49 18 64 18Z"
+    fill="url(#steelMain)"
+    stroke="url(#steelEdge)"
+    stroke-width="2"
+  />
+
+  <path
+    d="M64 24C76 24 87 29 93 40C98 49 98 63 91 77C85 88 76 96 64 102C52 96 43 88 37 77C30 63 30 49 35 40C41 29 52 24 64 24Z"
+    fill="url(#steelDark)"
+    stroke="#ADECFF"
+    stroke-opacity="0.28"
+    stroke-width="1.4"
+  />
+
+  <path d="M43 29L56 42" stroke="url(#steelEdge)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+  <path d="M85 29L72 42" stroke="url(#steelEdge)" stroke-width="2.2" stroke-linecap="round" opacity="0.9"/>
+  <path d="M64 22V42" stroke="url(#steelEdge)" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+
+  <path d="M50 22L57 34L50 48L42 40L50 22Z" fill="url(#steelMain)" stroke="#CDE9FF" stroke-opacity="0.35" stroke-width="1"/>
+  <path d="M78 22L71 34L78 48L86 40L78 22Z" fill="url(#steelMain)" stroke="#CDE9FF" stroke-opacity="0.35" stroke-width="1"/>
+  <rect x="57" y="24" width="14" height="16" rx="3" fill="#101626" stroke="url(#steelEdge)" stroke-width="1.4"/>
+  <circle cx="64" cy="32" r="4.6" fill="#1ED9FF"/>
+  <circle cx="64" cy="32" r="2.2" fill="#BFFFFF"/>
+
+  <ellipse cx="45.5" cy="60" rx="21" ry="18.5" fill="url(#furDisc)" opacity="0.88"/>
+  <ellipse cx="82.5" cy="60" rx="21" ry="18.5" fill="url(#furDisc)" opacity="0.88"/>
+
+  <g opacity="0.82" filter="url(#eyeAura)">
+    <circle cx="45.5" cy="58" r="14.8" fill="#48DCFF"/>
+    <circle cx="82.5" cy="58" r="14.8" fill="#7D4CFF"/>
+  </g>
+
+  <circle cx="45.5" cy="58" r="18.5" fill="#03060D" stroke="url(#steelEdge)" stroke-width="1.9"/>
+  <circle cx="82.5" cy="58" r="18.5" fill="#03060D" stroke="url(#steelEdge)" stroke-width="1.9"/>
+  <circle cx="45.5" cy="58" r="15" fill="none" stroke="#E7F0FF" stroke-opacity="0.42" stroke-width="1"/>
+  <circle cx="82.5" cy="58" r="15" fill="none" stroke="#E7F0FF" stroke-opacity="0.42" stroke-width="1"/>
+
+  <circle cx="45.5" cy="58" r="12.4" fill="url(#eyeCore)"/>
+  <circle cx="82.5" cy="58" r="12.4" fill="url(#eyeCore)"/>
+
+  <circle cx="45.5" cy="58" r="8.2" stroke="#41E0FF" stroke-width="1.35" opacity="0.95"/>
+  <circle cx="82.5" cy="58" r="8.2" stroke="#41E0FF" stroke-width="1.35" opacity="0.95"/>
+  <circle cx="45.5" cy="58" r="3.5" fill="#AFFFFF"/>
+  <circle cx="82.5" cy="58" r="3.5" fill="#AFFFFF"/>
+
+  <path d="M45.5 46V70" stroke="#94F9FF" stroke-width="1.1" stroke-linecap="round" opacity="0.95"/>
+  <path d="M33.5 58H57.5" stroke="#94F9FF" stroke-width="1.1" stroke-linecap="round" opacity="0.95"/>
+  <path d="M82.5 46V70" stroke="#94F9FF" stroke-width="1.1" stroke-linecap="round" opacity="0.95"/>
+  <path d="M70.5 58H94.5" stroke="#94F9FF" stroke-width="1.1" stroke-linecap="round" opacity="0.95"/>
+
+  <path d="M64 52L54 82C58 86 60 87 64 87C68 87 70 86 74 82L64 52Z" fill="url(#steelMain)" stroke="url(#steelEdge)" stroke-width="1.3" stroke-linejoin="round"/>
+  <path d="M59 66L64 82L69 66" stroke="#09111E" stroke-width="1.4" stroke-linecap="round" opacity="0.75"/>
+
+  <path d="M28 73L34 66L42 76L37 88L28 73Z" fill="url(#steelDark)" stroke="#7A62FF" stroke-opacity="0.42" stroke-width="1"/>
+  <path d="M100 73L94 66L86 76L91 88L100 73Z" fill="url(#steelDark)" stroke="#7A62FF" stroke-opacity="0.42" stroke-width="1"/>
+  <path d="M35 88L46 82L48 96L39 104L35 88Z" fill="url(#steelMain)" stroke="#B7CBFF" stroke-opacity="0.36" stroke-width="1"/>
+  <path d="M93 88L82 82L80 96L89 104L93 88Z" fill="url(#steelMain)" stroke="#B7CBFF" stroke-opacity="0.36" stroke-width="1"/>
+
+  <path d="M54 82L48 100" stroke="url(#steelEdge)" stroke-width="1.7" stroke-linecap="round" opacity="0.72"/>
+  <path d="M74 82L80 100" stroke="url(#steelEdge)" stroke-width="1.7" stroke-linecap="round" opacity="0.72"/>
+  <path d="M44 74L38 92" stroke="url(#steelEdge)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M84 74L90 92" stroke="url(#steelEdge)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+  <path d="M60 82V102" stroke="url(#steelEdge)" stroke-width="1.4" stroke-linecap="round" opacity="0.58"/>
+  <path d="M68 82V102" stroke="url(#steelEdge)" stroke-width="1.4" stroke-linecap="round" opacity="0.58"/>
+</svg>
