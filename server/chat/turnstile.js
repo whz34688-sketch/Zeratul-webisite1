@@ -25,6 +25,15 @@ export function getTurnstileState(config, request) {
     };
   }
 
+  if (!hasSiteKey && !hasSecretKey && config.allowChatWithoutTurnstile) {
+    return {
+      enabled: false,
+      bypass: true,
+      siteKey: "",
+      message: "当前站点未配置 Turnstile，已按项目设置临时跳过验证。"
+    };
+  }
+
   if (!hasSiteKey && !hasSecretKey) {
     return {
       enabled: false,
