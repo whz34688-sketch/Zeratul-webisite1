@@ -20,6 +20,8 @@
 - `knowledge/Zeratul个人信息库.md`：聊天知识库
 - `functions/api/chat.js`：聊天接口
 - `functions/api/chat-config.js`：前端读取公开运行配置
+- `api/chat.js`：Vercel 部署时使用的聊天接口
+- `api/chat-config.js`：Vercel 部署时使用的公开运行配置接口
 - `server/chat/*.js`：知识库解析、检索、提示词、Turnstile、限流、Workers AI 调用
 
 ---
@@ -195,3 +197,15 @@ npm run dev:ai-binding
 6. `TURNSTILE_SECRET_KEY`
 
 如果你不想在运行时使用 API Token，也可以在 Pages / Workers 里额外配置一个名字为 `AI` 的 Workers AI binding，代码会优先使用它。
+
+---
+
+## Vercel 说明
+
+如果你继续用 Vercel 托管这个站点：
+
+- 静态页面会直接正常发布
+- 聊天接口会走仓库里的 `api/chat.js` 与 `api/chat-config.js`
+- 需要在 Vercel 项目里补环境变量，例如 `OPENAI_API_KEY`、`OPENAI_BASE_URL`、`OPENAI_MODEL`、`TURNSTILE_SITE_KEY`、`TURNSTILE_SECRET_KEY`
+
+如果不补环境变量，页面可以打开，但聊天不会真正返回答案。
